@@ -11,6 +11,13 @@
 		17776BC9266A35E60016708D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17776BC8266A35E60016708D /* ContentView.swift */; };
 		17776BCB266A35E80016708D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17776BCA266A35E80016708D /* Assets.xcassets */; };
 		17776BCE266A35E80016708D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17776BCD266A35E80016708D /* Preview Assets.xcassets */; };
+		17776BD6266A360E0016708D /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17776BD5266A360E0016708D /* CameraViewController.swift */; };
+		17776BD8266A361E0016708D /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17776BD7266A361E0016708D /* CameraView.swift */; };
+		17776BDA266A362E0016708D /* CameraViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17776BD9266A362E0016708D /* CameraViewWrapper.swift */; };
+		17776BDC266A464E0016708D /* PoseEstimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17776BDB266A464E0016708D /* PoseEstimator.swift */; };
+		17D095602677823D00059627 /* Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D0955F2677823D00059627 /* Shapes.swift */; };
+		17D09562267885C400059627 /* StickFigureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D09561267885C400059627 /* StickFigureView.swift */; };
+		17D095642678C81300059627 /* CGPointExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D095632678C81300059627 /* CGPointExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,13 @@
 		17776BCA266A35E80016708D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17776BCD266A35E80016708D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		17776BCF266A35E80016708D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17776BD5266A360E0016708D /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		17776BD7266A361E0016708D /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		17776BD9266A362E0016708D /* CameraViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewWrapper.swift; sourceTree = "<group>"; };
+		17776BDB266A464E0016708D /* PoseEstimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoseEstimator.swift; sourceTree = "<group>"; };
+		17D0955F2677823D00059627 /* Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shapes.swift; sourceTree = "<group>"; };
+		17D09561267885C400059627 /* StickFigureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickFigureView.swift; sourceTree = "<group>"; };
+		17D095632678C81300059627 /* CGPointExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPointExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				17776BC6266A35E60016708D /* SquatCounterApp.swift */,
-				17776BC8266A35E60016708D /* ContentView.swift */,
+				17776BDB266A464E0016708D /* PoseEstimator.swift */,
+				17D095652679FA0F00059627 /* Views */,
+				17D095672679FA4F00059627 /* UIKit */,
+				17D0955E2677823000059627 /* Shapes */,
+				17D095662679FA3400059627 /* Extensions */,
 				17776BCA266A35E80016708D /* Assets.xcassets */,
 				17776BCF266A35E80016708D /* Info.plist */,
 				17776BCC266A35E80016708D /* Preview Content */,
@@ -67,6 +85,41 @@
 				17776BCD266A35E80016708D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		17D0955E2677823000059627 /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				17D0955F2677823D00059627 /* Shapes.swift */,
+			);
+			path = Shapes;
+			sourceTree = "<group>";
+		};
+		17D095652679FA0F00059627 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				17776BC8266A35E60016708D /* ContentView.swift */,
+				17D09561267885C400059627 /* StickFigureView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		17D095662679FA3400059627 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17D095632678C81300059627 /* CGPointExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		17D095672679FA4F00059627 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				17776BD5266A360E0016708D /* CameraViewController.swift */,
+				17776BD9266A362E0016708D /* CameraViewWrapper.swift */,
+				17776BD7266A361E0016708D /* CameraView.swift */,
+			);
+			path = UIKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17D095602677823D00059627 /* Shapes.swift in Sources */,
 				17776BC9266A35E60016708D /* ContentView.swift in Sources */,
+				17776BD8266A361E0016708D /* CameraView.swift in Sources */,
+				17776BDA266A362E0016708D /* CameraViewWrapper.swift in Sources */,
 				17776BC7266A35E60016708D /* SquatCounterApp.swift in Sources */,
+				17D09562267885C400059627 /* StickFigureView.swift in Sources */,
+				17776BD6266A360E0016708D /* CameraViewController.swift in Sources */,
+				17776BDC266A464E0016708D /* PoseEstimator.swift in Sources */,
+				17D095642678C81300059627 /* CGPointExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
