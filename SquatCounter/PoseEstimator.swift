@@ -43,7 +43,7 @@ class PoseEstimator: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate, Obs
     func countSquats(bodyParts: [VNHumanBodyPoseObservation.JointName : VNRecognizedPoint]) {
         
         let rightKnee = bodyParts[.rightKnee]!.location
-        let leftKnee = bodyParts[.rightKnee]!.location
+        let leftKnee = bodyParts[.leftKnee]!.location
         let rightHip = bodyParts[.rightHip]!.location
         let rightAnkle = bodyParts[.rightAnkle]!.location
         let leftAnkle = bodyParts[.leftAnkle]!.location
